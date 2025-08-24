@@ -25,7 +25,7 @@ import {
   Rating,
 } from "@mui/material";
 import { useTheme } from "../../context/ThemeContext";
-import AdminLayout from "../../components/admin/AdminLayout";
+import AdminLayout from "../../Components/admin/AdminLayout";
 import axios from "axios";
 import { motion } from "framer-motion";
 
