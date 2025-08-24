@@ -11,7 +11,7 @@
 Fusha Platform (فسحة) is a comprehensive trip planning application designed to simplify the process of creating personalized travel experiences. Users can easily design their perfect outing by selecting locations, setting budgets, defining the number of travelers, and choosing from various activity types - all in a user-friendly Arabic interface.
 
 <p align="center">
-  <a href="https://fusha-platform.vercel.app">🔗 Live Demo</a> •
+  <a href="https://foshaa-platform.vercel.app">🔗 Live Demo</a> •
   <a href="#installation">⚙️ Installation</a> •
   <a href="#features">✨ Features</a> •
   <a href="#technical-architecture">🏗️ Architecture</a>
