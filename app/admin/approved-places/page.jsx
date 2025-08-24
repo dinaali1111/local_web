@@ -10,7 +10,7 @@ import {
   Button,
 } from "@mui/material";
 import { useTheme } from "../../context/ThemeContext";
-import AdminLayout from "../../components/admin/AdminLayout";
+import AdminLayout from "../../Components/admin/AdminLayout";
 
 const ApprovedPlaces = () => {
   const { theme, darkMode } = useTheme();
