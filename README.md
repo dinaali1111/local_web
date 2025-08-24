@@ -20,6 +20,7 @@ Fusha Platform (فسحة) is a comprehensive trip planning application designed 
 ## ✨ Features
 
 ### For Travelers
+
 - **Personalized Trip Creation**: Build your own trip with customizable parameters
 - **Trip Type Selection**: Choose from various trip types (cultural, recreational, family, romantic, marine, touristic, adventure, religious)
 - **Budget Management**: Plan trips according to your specific budget
@@ -31,6 +32,7 @@ Fusha Platform (فسحة) is a comprehensive trip planning application designed 
 - **Rating System**: Rate and review places you've visited
 
 ### For Sellers/Service Providers
+
 - **Place Listing**: Add your services or attraction to the platform
 - **Customer Engagement**: Connect with potential customers
 - **Analytics Dashboard**: Track visitor interest and engagement
@@ -38,6 +40,7 @@ Fusha Platform (فسحة) is a comprehensive trip planning application designed 
 ## 🛠️ Technology Stack
 
 ### Frontend
+
 - **Next.js 15**: React framework with App Router for server components
 - **React 19**: UI library for building component-based interfaces
 - **Material UI 6**: Modern React UI framework with customized theming
@@ -48,6 +51,7 @@ Fusha Platform (فسحة) is a comprehensive trip planning application designed 
 - **JWT Decode**: Client-side token validation
 
 ### Backend
+
 - **Node.js**: JavaScript runtime for server-side code
 - **Express**: Web application framework for Node.js with route handling
 - **MongoDB**: NoSQL database for data storage with Atlas cloud hosting
@@ -69,6 +73,7 @@ Fusha Platform (فسحة) is a comprehensive trip planning application designed 
 ```
 
 ### Authentication Flow
+
 ```
 1. User Login → 2. Server validates credentials → 3. JWT issued (access + refresh)
 4. Client stores tokens → 5. Access token used for requests → 6. Token refresh when expired
@@ -135,6 +140,7 @@ fusha-platform/
 ## 📱 User Interface
 
 The application features a responsive, mobile-friendly interface with:
+
 - RTL (Right-to-Left) layout for Arabic language support
 - Intuitive navigation system with hamburger menu on mobile
 - Interactive elements with smooth animations and transitions
@@ -200,6 +206,7 @@ GET    /api/avatar           # Get user testimonials
 ## 🏃‍♂️ Getting Started
 
 ### Prerequisites
+
 - Node.js (v18 or later)
 - MongoDB instance (local or Atlas)
 - npm or yarn package manager
@@ -207,17 +214,20 @@ GET    /api/avatar           # Get user testimonials
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/yourusername/fusha-platform.git
    cd fusha-platform
    ```
 
 2. **Install frontend dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Install backend dependencies**
+
    ```bash
    cd ../iti-server
    npm install
@@ -225,32 +235,35 @@ GET    /api/avatar           # Get user testimonials
 
 4. **Set up environment variables**
    Create a `.env` file in the server directory with:
+
    ```
    # Database Connection
    MONGO_URI=your_mongodb_connection_string
-   
+
    # Authentication
    JWT_SECRET=your_jwt_secret_key
    JWT_REFERSH_SECRET=your_jwt_refresh_secret
    JWT_EXPIRY=1h
    JWT_REFRESH_EXPIRY=7d
-   
+
    # Server Configuration
    PORT=4000
    NODE_ENV=development
-   
+
    # Additional Settings
    CORS_ORIGIN=http://localhost:3000
    ```
 
 5. **Start the development servers**
-   
+
    Frontend:
+
    ```bash
    npm run dev
    ```
-   
+
    Backend:
+
    ```bash
    npm start
    ```
@@ -264,13 +277,17 @@ GET    /api/avatar           # Get user testimonials
 ## 🌐 Deployment
 
 ### Frontend Deployment
+
 The Next.js frontend is optimized for deployment on Vercel:
+
 1. Connect your GitHub repository to Vercel
 2. Configure environment variables
 3. Deploy with a single click
 
 ### Backend Deployment
+
 The Express backend can be deployed to:
+
 - **Railway**: Easy deployment with GitHub integration
 - **Heroku**: Set up with Procfile and environment variables
 - **Digital Ocean**: Using App Platform or Droplets
@@ -290,17 +307,22 @@ npm test
 ## 💡 Key Features Implementation
 
 ### Trip Creation Flow
+
 The trip creation process is implemented with a multi-step form using state management:
+
 1. Initial details (people, budget, location)
 2. Trip type selection with visual indicators
 3. Activity/place selection with filtering
 4. Review and save with summary view
 
 ### Dynamic Place Selection
+
 Places are filtered based on location and trip type selection, using MongoDB aggregation pipelines to deliver relevant results to users.
 
 ### Responsive Design
+
 The application uses CSS Grid, Flexbox and Media Queries to provide an optimal experience on:
+
 - Mobile phones (portrait and landscape)
 - Tablets
 - Desktops and large screens
